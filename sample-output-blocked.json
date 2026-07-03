@@ -1,0 +1,16 @@
+{
+  "note_id": "7987654321098765432",
+  "note_url": "https://www.xiaohongshu.com/explore/7987654321098765432",
+  "title": "验证码阻止示例",
+  "content": null,
+  "publish_date": null,
+  "note_type": null,
+  "likes": null,
+  "collects": null,
+  "comments": null,
+  "shares": null,
+  "author": null,
+  "exported_at": "2024-12-15T14:40:15.456Z",
+  "status": "blocked",
+  "blocked_reason": "CAPTCHA_DETECTED"
+}
