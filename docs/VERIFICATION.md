@@ -8,7 +8,7 @@
 |------|----|
 | 笔记 ID | `69a016780000000022039019` |
 | 笔记 URL | `https://www.xiaohongshu.com/explore/69a016780000000022039019` |
-| 测试日期 | 2024-12-15 |
+| 测试日期 | 2026-07-03 |
 | 测试工具 | Chrome 扩展 v1.0.3 |
 
 ### 预期输出
@@ -26,7 +26,7 @@
   "comments": 256,
   "shares": null,
   "author": "[作者昵称与页面一致]",
-  "exported_at": "2024-12-15T...",
+  "exported_at": "2026-07-03T...",
   "status": "success",
   "blocked_reason": null,
   "source_mode": "manual_single_page_visible_dom"
@@ -61,7 +61,9 @@
 
 ## 可复现性
 
-该验证���果基于 Chrome 扩展版本 1.0.3，使用 `manifest_version: 3`。
+该验证结果基于 Edge/Chromium 扩展版本 1.0.3，使用 `manifest_version: 3`。
+
+验证范围目前为一篇公开图文笔记。视频笔记及其他页面布局尚未完成同等程度的字段级验证，不应将本记录解释为对所有页面类型的普遍保证。
 
 任何研究者可以：
 1. 克隆此仓库

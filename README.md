@@ -12,7 +12,7 @@
 - ✅ **安全检测** - 检测登录、验证码、异常访问，检测到时停止导出
 - ✅ **隐私优先** - 删除所有查询参数、xsec_token、媒体链接、用户代理
 - ✅ **透明预览** - 导出前显示预览，用户确认后下载
-- ✅ **完整验证** - 已在真实笔记上验证，得到 `likes=831, collects=479, comments=256`
+- ✅ **真实页面验证** - 已在一篇公开图文笔记上验证，得到 `likes=831, collects=479, comments=256`
 
 ---
 
@@ -70,14 +70,14 @@ JSON 文件保存在浏览器下载目录的 `xhs_research_exports` 子文件夹
   "note_url": "https://www.xiaohongshu.com/explore/69a016780000000022039019",
   "title": "笔记标题",
   "content": "笔记正文...",
-  "publish_date": "2024-12-15",
+  "publish_date": "02-26",
   "note_type": "图文",
   "likes": 831,
   "collects": 479,
   "comments": 256,
   "shares": null,
   "author": "作者昵称",
-  "exported_at": "2024-12-15T14:35:22.123Z",
+  "exported_at": "2026-07-03T15:16:10.731Z",
   "status": "success",
   "blocked_reason": null,
   "source_mode": "manual_single_page_visible_dom"
@@ -181,10 +181,10 @@ JSON 文件保存在浏览器下载目录的 `xhs_research_exports` 子文件夹
 在学术论文中使用此工具，建议引用：
 
 ```bibtex
-@software{xiaohongshu_exporter_2024,
+@software{xiaohongshu_exporter_2026,
   title = {小红书研究单页导出器},
   author = {yuefengw98-spec},
-  year = {2024},
+  year = {2026},
   url = {https://github.com/yuefengw98-spec/xiaohongshu-exporter},
   version = {1.0.3-stable}
 }
@@ -228,6 +228,6 @@ MIT License - 自由使用、修改和分发
 
 ---
 
-**最后更新**: 2024-12-15  
-**当前版本**: v1.0.3-stable  
+**最后更新**: 2026-07-04
+**当前版本**: v1.0.3-stable
 **维护者**: yuefengw98-spec

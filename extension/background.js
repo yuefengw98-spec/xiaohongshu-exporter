@@ -98,7 +98,7 @@ function extractVisibleNote() {
     ["login_required", ["登录后查看", "请先登录", "扫码登录", "手机号登录"]],
     ["captcha", ["验证码", "请完成验证", "拖动滑块"]],
     ["security_verification", ["安全验证", "IP存在风险", "异常访问", "网络环境存在风险"]],
-    ["rate_limited", ["访问频繁", "操作��繁", "请求频繁", "稍后再试"]],
+    ["rate_limited", ["访问频繁", "操作频繁", "请求频繁", "稍后再试"]],
   ];
   for (const [reason, words] of blockRules) {
     if (words.some((word) => bodyText.includes(word))) {
