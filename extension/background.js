@@ -94,6 +94,14 @@ function extractVisibleNote() {
     return null;
   };
   const bodyText = clean(document.body?.innerText);
+  const hasVisibleNoteContent = ["#detail-title", "#detail-desc", "[class*='note-title']", "[class*='note-content']"]
+    .some((selector) => Array.from(document.querySelectorAll(selector)).some(visible));
+  const visibleChallengeSelectors = [
+    "[class*='captcha']", "[id*='captcha']", "[class*='slider-verify']",
+    "[class*='security-verify']", "[class*='verify-container']", "[id*='verify-container']"
+  ];
+  const hasVisibleChallenge = visibleChallengeSelectors
+    .some((selector) => Array.from(document.querySelectorAll(selector)).some(visible));
   const blockRules = [
     ["login_required", ["登录后查看", "请先登录", "扫码登录", "手机号登录"]],
     ["captcha", ["验证码", "请完成验证", "拖动滑块"]],
@@ -101,7 +109,7 @@ function extractVisibleNote() {
     ["rate_limited", ["访问频繁", "操作频繁", "请求频繁", "稍后再试"]],
   ];
   for (const [reason, words] of blockRules) {
-    if (words.some((word) => bodyText.includes(word))) {
+    if ((hasVisibleChallenge || !hasVisibleNoteContent) && words.some((word) => bodyText.includes(word))) {
       return { status: "blocked", blocked_reason: reason, exported_at: new Date().toISOString() };
     }
   }

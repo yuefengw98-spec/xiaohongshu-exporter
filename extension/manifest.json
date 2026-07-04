@@ -1,7 +1,7 @@
 {
   "manifest_version": 3,
   "name": "小红书研究单页导出器",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "由研究者手动打开单篇笔记后，一键导出当前页面可见的最小研究字段。",
   "permissions": ["activeTab", "scripting", "downloads"],
   "action": {
